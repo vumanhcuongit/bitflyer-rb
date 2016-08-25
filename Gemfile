@@ -1,4 +1,7 @@
-source 'https://rubygems.org'
+source "http://rubygems.org"
 
-# Specify your gem's dependencies in bitflyer-rb.gemspec
-gemspec
+gem "rest-client", "~> 1.7.0"
+
+group :test do
+  gem "rspec"
+end
