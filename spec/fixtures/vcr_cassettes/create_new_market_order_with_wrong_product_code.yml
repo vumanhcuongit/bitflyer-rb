@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bitflyer.jp/v1/me/sendchildorder
+    body:
+      encoding: UTF-8
+      string: '{"product_code":"BTC_BTC","child_order_type":"MARKET","side":"BUY","size":0.001}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Access-Key:
+      - "<KEY>"
+      Access-Timestamp:
+      - '1472195681'
+      Access-Sign:
+      - 7df1ae81453eb14dd557a34f8f0e1e6d7fc6b703f5ade33bf05d51b1bfa8c5cc
+      Content-Length:
+      - '80'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.5
+      Set-Cookie:
+      - ASP.NET_SessionId=edpfchc0awllci5oqcgtesvb; path=/; secure; HttpOnly
+      - incap_ses_463_528438=IfvAZ19bzTGvV4D2J+hsBmLsv1cAAAAAyyS0+6MvrdIOucDxRcfk3Q==;
+        path=/; Domain=.bitflyer.jp
+      - nlbi_528438=+l6KDdNBtAVRA6xjudfusAAAAAAempJ4fkw3kPDqy2OoV5K+; path=/; Domain=.bitflyer.jp
+      - visid_incap_528438=zDzVjnopROmoKg9Tk70Q6WLsv1cAAAAAQUIPAAAAAAAiyI4Teu8wsYQgFO7InMY8;
+        expires=Fri, 25 Aug 2017 15:07:03 GMT; path=/; Domain=.bitflyer.jp
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'default-src http: https: ws: wss: data: ''unsafe-inline'' ''unsafe-eval'''
+      Date:
+      - Fri, 26 Aug 2016 07:14:39 GMT
+      X-Iinfo:
+      - 6-14509944-14508132 PNNN RT(1472195681924 311) q(0 0 0 -1) r(0 0) U5
+      X-Cdn:
+      - Incapsula
+      Content-Encoding:
+      - gzip
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAA/6tWKi5JLCktVrLSNTQw0FFKLSrKL4rPTS0uTkxPVbJS8swr
+        S8zJTFEoKMpPKU0uUdJRSkksSVSyyivNyakFAPYacE49AAAA
+    http_version: 
+  recorded_at: Fri, 26 Aug 2016 07:14:43 GMT
+recorded_with: VCR 2.9.3
