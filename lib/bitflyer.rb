@@ -1,7 +1,8 @@
 require "bitflyer/version"
-require "bitflyer/orders"
 require "bitflyer/net"
 require "bitflyer/model"
+require "bitflyer/orders"
+require "bitflyer/executions"
 
 module Bitflyer
   class << self

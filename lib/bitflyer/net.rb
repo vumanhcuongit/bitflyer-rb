@@ -8,10 +8,14 @@ module Bitflyer
       return "https://api.bitflyer.jp#{path}"
     end
 
-    def self.get(path, options = {})
+    def self.get(path, options = {}, private_api = false)
       begin
         path += "?#{URI.encode_www_form(options)}" unless options.empty?
-        RestClient.get(self.to_uri(path), self.headers_for(path, options))
+        if private_api
+          RestClient.get(self.to_uri(path), self.headers_for(path, options))
+        else
+          RestClient.get(self.to_uri(path))
+        end
       rescue RestClient::BadRequest => e
         raise BadRequest.new(e.response)
       end

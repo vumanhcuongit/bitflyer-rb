@@ -8,4 +8,18 @@ module Bitflyer
       attribute :child_order_acceptance_id, String
     end
   end
+
+  class Execution
+    include Virtus.value_object
+
+    values do
+      attribute :id, Integer
+      attribute :side, String
+      attribute :price, Decimal
+      attribute :size, Float
+      attribute :exec_date, String
+      attribute :buy_child_order_acceptance_id, String
+      attribute :sell_child_order_acceptance_id, String
+    end
+  end
 end
