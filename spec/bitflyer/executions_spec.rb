@@ -1,5 +1,4 @@
 require "spec_helper"
-require "bitflyer"
 
 describe Bitflyer::Executions do
   it "gets list executions" do
