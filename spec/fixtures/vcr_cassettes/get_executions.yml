@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitflyer.jp/v1/executions?product_code=BTC_JPY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - "*/*; q=0.5, application/xml"
+      accept-encoding:
+      - gzip, deflate
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - no-cache
+      pragma:
+      - no-cache
+      content-type:
+      - application/json; charset=utf-8
+      content-encoding:
+      - gzip
+      expires:
+      - "-1"
+      server:
+      - Microsoft-IIS/8.5
+      x-aspnet-version:
+      - 4.0.30319
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      content-security-policy:
+      - 'default-src http: https: ws: wss: data: ''unsafe-inline'' ''unsafe-eval'''
+      date:
+      - Fri, 26 Aug 2016 09:03:23 GMT
+      content-length:
+      - '2621'
+      set-cookie:
+      - visid_incap_528438=KT7fBYL5TyOGnEl0gAOcKd0FwFcAAAAAQUIPAAAAAACKSoWZbF3eyOHvwjZJjxzr;
+        expires=Fri, 25 Aug 2017 15:07:03 GMT; path=/; Domain=.bitflyer.jp
+      - nlbi_528438=bZVQHZWFEXsl7R2PudfusAAAAAAJP4nErBHk8FJfUVnb1PEC; path=/; Domain=.bitflyer.jp
+      - incap_ses_463_528438=tq5fKlIlpADocMn2J+hsBt0FwFcAAAAAUGkQmHxtiqeU5A35PoTFlA==;
+        path=/; Domain=.bitflyer.jp
+      x-iinfo:
+      - 9-31261987-31222848 PNNN RT(1472202205094 165) q(0 0 0 -1) r(2 2) U5
+      x-cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        n/8H6EJhVENcAAA=
+    http_version: '1.1'
+  recorded_at: Fri, 26 Aug 2016 09:03:26 GMT
+recorded_with: VCR 2.9.3
