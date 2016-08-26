@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/vumanhcuongit/bitflyer-rb/tree/master.svg?style=shield)](https://circleci.com/gh/vumanhcuongit/bitflyer-rb/tree/master)
+
 # Bitflyer
 
 TODO: Add full README.
