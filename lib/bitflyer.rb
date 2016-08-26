@@ -1,6 +1,5 @@
 require "bitflyer/version"
 require "bitflyer/orders"
-require "bitflyer/executions"
 require "bitflyer/net"
 require "bitflyer/model"
 
