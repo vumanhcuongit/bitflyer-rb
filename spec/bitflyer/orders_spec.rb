@@ -17,8 +17,9 @@ describe Bitflyer::Orders do
         side: "BUY",
         size: 0.001,
       }
-      result = described_class.create(options)
-      expect(result["child_order_acceptance_id"]).not_to be_nil
+      order = described_class.create(options)
+
+      expect(order.child_order_acceptance_id).not_to be_nil
     end
   end
 
@@ -31,6 +32,7 @@ describe Bitflyer::Orders do
           side: "BUY",
           size: 0.001,
         }
+
         expect { described_class.create(options) }.to raise_error(Bitflyer::Net::BadRequest, '{"status":-100,"error_message":"Invalid product","data":null}')
       end
     end
@@ -45,6 +47,7 @@ describe Bitflyer::Orders do
           side: "BUYYYYYYY",
           size: 0.001,
         }
+
         expect { described_class.create(options) }.to raise_error(Bitflyer::Net::BadRequest, '{"status":-102,"error_message":"Invalid direction code","data":null}')
       end
     end
