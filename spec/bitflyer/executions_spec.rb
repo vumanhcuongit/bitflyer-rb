@@ -11,8 +11,6 @@ describe Bitflyer::Executions do
       expect(executions.first.price).to eq(58497.0)
       expect(executions.first.size).to eq(1.0)
       expect(executions.first.exec_date).to eq("2016-08-26T09:03:00.12")
-      expect(executions.first.buy_child_order_acceptance_id).to eq("JRF20160826-090257-039754")
-      expect(executions.first.sell_child_order_acceptance_id).to eq("JRF20160826-180249-021576")
     end
   end
 end
