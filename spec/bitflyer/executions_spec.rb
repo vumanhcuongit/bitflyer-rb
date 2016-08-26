@@ -1,9 +1,6 @@
 require "spec_helper"
 require "bitflyer"
 
-describe Bitflyer::Orders do
-end
-
 describe Bitflyer::Executions do
   it "gets list executions" do
     VCR.use_cassette("get_executions") do
