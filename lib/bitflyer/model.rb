@@ -22,4 +22,14 @@ module Bitflyer
       attribute :sell_child_order_acceptance_id, String
     end
   end
+
+  class Balance
+    include Virtus.value_object
+
+    values do
+      attribute :currency_code, String
+      attribute :amount, Decimal
+      attribute :available, Decimal
+    end
+  end
 end

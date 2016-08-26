@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitflyer.jp/v1/me/getbalance
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      content-type:
+      - application/json
+      access-key:
+      - "<KEY>"
+      access-timestamp:
+      - '1472206072'
+      access-sign:
+      - 01c6e98551cf8a985ceecad15aa61b93d17fbcf80b9dcb7a100be23cbae76a68
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - no-cache
+      pragma:
+      - no-cache
+      content-type:
+      - application/json; charset=utf-8
+      expires:
+      - "-1"
+      server:
+      - Microsoft-IIS/8.5
+      set-cookie:
+      - ASP.NET_SessionId=i2f202afjgk0abuyb0tkadnp; path=/; secure; HttpOnly
+      - visid_incap_528438=1cIRVTvcQ2GqQBqsRQYmUvgUwFcAAAAAQUIPAAAAAACN9Fcj24YRzieP8d3ADt0I;
+        expires=Fri, 25 Aug 2017 15:07:03 GMT; path=/; Domain=.bitflyer.jp
+      - nlbi_528438=YQNSXK4Nzjw4lwnzudfusAAAAADuugLwXtHnmI7ibYsPYVkl; path=/; Domain=.bitflyer.jp
+      - incap_ses_463_528438=ruj2c5lGygqpWPD2J+hsBvgUwFcAAAAA/0TSxsDYkHnrx0W2q3NpQw==;
+        path=/; Domain=.bitflyer.jp
+      x-aspnet-version:
+      - 4.0.30319
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      content-security-policy:
+      - 'default-src http: https: ws: wss: data: ''unsafe-inline'' ''unsafe-eval'''
+      date:
+      - Fri, 26 Aug 2016 10:07:49 GMT
+      x-iinfo:
+      - 3-16772769-16732017 PNNN RT(1472206072433 197) q(0 0 0 -1) r(0 0) U5
+      x-cdn:
+      - Incapsula
+      content-encoding:
+      - gzip
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAA/4uuVkouLSpKzUuujE/OT0lVslLyCohU0lFKzM0vzStRsjI3
+        MzQ1MTbQMwAKlSVm5iQm5aQiidbqYBrgFOKMbABQlbG5gQWqfqggNu2uIR5I
+        2tFtBtkZCwCkC4EDtgAAAA==
+    http_version: '1.1'
+  recorded_at: Fri, 26 Aug 2016 10:07:53 GMT
+recorded_with: VCR 2.9.3
