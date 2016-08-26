@@ -17,6 +17,7 @@ GEM
     diff-lcs (1.2.5)
     dotenv (2.0.2)
     equalizer (0.0.11)
+    fakeweb (1.3.0)
     ice_nine (0.11.1)
     mime-types (2.99.2)
     netrc (0.11.0)
@@ -50,6 +51,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   dotenv
+  fakeweb
   rest-client (~> 1.7.0)
   rspec
   vcr

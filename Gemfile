@@ -11,4 +11,5 @@ group :test do
   gem "rspec"
   gem "dotenv"
   gem 'vcr'
+  gem 'fakeweb'
 end
