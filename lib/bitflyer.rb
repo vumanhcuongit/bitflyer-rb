@@ -3,6 +3,7 @@ require "bitflyer/net"
 require "bitflyer/model"
 require "bitflyer/orders"
 require "bitflyer/executions"
+require "bitflyer/balances"
 
 module Bitflyer
   class << self

@@ -1,5 +1,4 @@
 require "spec_helper"
-require "bitflyer"
 
 describe Bitflyer::Orders do
   before do
