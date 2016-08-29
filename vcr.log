@@ -1,0 +1,10 @@
+[Cassette: 'get_balances'] Initialized with options: {:record=>:once, :match_requests_on=>[:method, :uri], :allow_unused_http_interactions=>true, :serialize_with=>:yaml, :persist_with=>:file_system}
+[fakeweb] Handling request: [get https://api.bitflyer.jp/v1/me/getbalance] (disabled: false)
+[VCR::Configuration] before_playback: replacing "<KEY>" with "7oj6RJ2ddLZpdb5GCxvtcF"
+[VCR::Configuration] before_playback: replacing "<SECRET>" with "EiWM67Txzlnip008zsvui0TVqw57fAF/M1zl7czpBNc="
+  [Cassette: 'get_balances'] Initialized HTTPInteractionList with request matchers [:method, :uri] and 1 interaction(s): { [get https://api.bitflyer.jp/v1/me/getbalance] => [200 "\x1F\x8B\b\x00\x00\x00\x00\x00\x00\xFF\x8B\xAEVJ.-*J\xCDK\xAE\x8CO\xCEOIU\xB2R\xF2\n\x88T\xD2QJ\xCC\xCD/\xCD+Q\xB22734516\xD03\x00\n\x95%f\xE6$&\xE5\xA4\"\x89\xD6\xEA`\x1A\xE0\x14\xE2\x8Cl\x00P\x95\xB1\xB9\x81\x05"] }
+  [Cassette: 'get_balances'] Checking if [get https://api.bitflyer.jp/v1/me/getbalance] matches [get https://api.bitflyer.jp/v1/me/getbalance] using [:method, :uri]
+    [Cassette: 'get_balances'] method (matched): current request [get https://api.bitflyer.jp/v1/me/getbalance] vs [get https://api.bitflyer.jp/v1/me/getbalance]
+    [Cassette: 'get_balances'] uri (matched): current request [get https://api.bitflyer.jp/v1/me/getbalance] vs [get https://api.bitflyer.jp/v1/me/getbalance]
+  [Cassette: 'get_balances'] Found matching interaction for [get https://api.bitflyer.jp/v1/me/getbalance] at index 0: [200 "\x1F\x8B\b\x00\x00\x00\x00\x00\x00\xFF\x8B\xAEVJ.-*J\xCDK\xAE\x8CO\xCEOIU\xB2R\xF2\n\x88T\xD2QJ\xCC\xCD/\xCD+Q\xB22734516\xD03\x00\n\x95%f\xE6$&\xE5\xA4\"\x89\xD6\xEA`\x1A\xE0\x14\xE2\x8Cl\x00P\x95\xB1\xB9\x81\x05"]
+[fakeweb] Identified request type (stubbed_by_vcr) for [get https://api.bitflyer.jp/v1/me/getbalance]

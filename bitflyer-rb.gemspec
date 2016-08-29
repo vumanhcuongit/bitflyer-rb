@@ -4,8 +4,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'bitflyer/rb/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "bitflyer-rb"
-  spec.version       = Bitflyer::Rb::VERSION
+  spec.name          = "bitflyer"
+  spec.version       = Bitflyer::VERSION
   spec.authors       = ["Cuong Vu"]
   spec.email         = ["cuongvu0103@gmail.com"]
 
