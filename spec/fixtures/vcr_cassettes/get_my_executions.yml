@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitflyer.jp/v1/me/getexecutions?product_code=BTC_JPY&count=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      content-type:
+      - application/json
+      access-key:
+      - "<KEY>"
+      access-timestamp:
+      - '1472473464'
+      access-sign:
+      - eac95d713b069909c1f78aec87ba7b626fe7d17b3e054e7e0459c4bc68a964f6
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - no-cache
+      pragma:
+      - no-cache
+      content-type:
+      - application/json; charset=utf-8
+      expires:
+      - "-1"
+      server:
+      - Microsoft-IIS/8.5
+      set-cookie:
+      - ASP.NET_SessionId=3nernozqfav03ngrd4nvlfu3; path=/; secure; HttpOnly
+      - visid_incap_528438=E1V38cYOTKGvIy2kMy9STXspxFcAAAAAQUIPAAAAAAB9zx5+xjVE/33tjm6uEv25;
+        expires=Tue, 29 Aug 2017 09:32:40 GMT; path=/; Domain=.bitflyer.jp
+      - nlbi_528438=0DnQQNdJXSQ0+VKQudfusAAAAAD2e2MmmzkeGDeDKKsBmpgS; path=/; Domain=.bitflyer.jp
+      - incap_ses_401_528438=D4jAa0YDQWxx5R5tE6SQBXspxFcAAAAAZZn1LHV6ljM0Ii/qyqx6HA==;
+        path=/; Domain=.bitflyer.jp
+      x-aspnet-version:
+      - 4.0.30319
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      content-security-policy:
+      - 'default-src http: https: ws: wss: data: ''unsafe-inline'' ''unsafe-eval'''
+      date:
+      - Mon, 29 Aug 2016 12:24:26 GMT
+      x-iinfo:
+      - 4-44589412-44588885 PNNN RT(1472473467297 197) q(0 0 0 0) r(2 2) U5
+      x-cdn:
+      - Incapsula
+      content-encoding:
+      - gzip
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: !binary |-
+        H4sIAAAAAAAA/62PsWoDMQyG30Xz5ZBly7U9dujQpRCSoYRyHLahhiQX7jKU
+        hrx75KaU61AypN4s/fqkb3OCkiAYo7VnamAqKUOAx/UrNHAYS5QfO+Opxdmr
+        uU/poFTVrJo/cuxSf6wIQmUX6BZkV+gDYlC2NfZBsPG9bFM3jCmPXV0Ozy/L
+        mkZHMuHxa5A1WqrhYbcr01SG/XXd/Ig5qI8xH479PuZv5vLpN1MJk8lbODc/
+        zsTO/+VMzHc5u6A4GN06fVPZKTZarlTW8n8pVyYJ04kJnN8uhYQKoegBAAA=
+    http_version: '1.1'
+  recorded_at: Mon, 29 Aug 2016 12:24:27 GMT
+recorded_with: VCR 2.9.3
