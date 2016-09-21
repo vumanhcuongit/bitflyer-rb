@@ -19,6 +19,7 @@ describe Bitflyer::Orders do
       order = described_class.create(options)
 
       expect(order.child_order_acceptance_id).not_to be_nil
+      expect(order.id).to eq(order.child_order_acceptance_id)
     end
   end
 

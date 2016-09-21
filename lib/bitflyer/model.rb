@@ -7,6 +7,10 @@ module Bitflyer
     values do
       attribute :child_order_acceptance_id, String
     end
+
+    def id
+      self.child_order_acceptance_id
+    end
   end
 
   class Execution
