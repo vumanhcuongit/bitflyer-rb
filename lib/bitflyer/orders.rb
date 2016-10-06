@@ -5,5 +5,10 @@ module Bitflyer
       result = Bitflyer::Net.post("/v1/me/sendchildorder", options)
       Bitflyer::Order.new(JSON.parse(result))
     end
+
+    def self.cancel(options = {})
+      Bitflyer.sanity_check!
+      Bitflyer::Net.post("/v1/me/cancelorder", options)
+    end
   end
 end
