@@ -4,6 +4,7 @@ require "bitflyer/model"
 require "bitflyer/orders"
 require "bitflyer/executions"
 require "bitflyer/balances"
+require "bitflyer/collateral"
 
 module Bitflyer
   class << self
