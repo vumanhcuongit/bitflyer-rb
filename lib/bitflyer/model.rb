@@ -39,4 +39,15 @@ module Bitflyer
       attribute :available, Decimal
     end
   end
+
+  class Collateral
+    include Virtus.value_object
+
+    values do
+      attribute :collateral, Decimal
+      attribute :open_position_pnl, Decimal
+      attribute :require_collateral, Decimal
+      attribute :keep_rate, Decimal
+    end
+  end
 end
