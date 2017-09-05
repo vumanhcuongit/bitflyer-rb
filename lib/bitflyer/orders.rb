@@ -10,5 +10,10 @@ module Bitflyer
       Bitflyer.sanity_check!
       Bitflyer::Net.post("/v1/me/cancelchildorder", options)
     end
+
+    def self.cancel_all(options = {})
+      Bitflyer.sanity_check!
+      Bitflyer::Net.post("/v1/me/cancelallchildorders", options)
+    end
   end
 end
